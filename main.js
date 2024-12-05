@@ -11,10 +11,9 @@ const foo = async () => {
 
         for (const fileName of files) {
             const filePath = path.join(dirPath, fileName);
-            await fs.writeFile(filePath, `Це файл ${fileName} у папці ${dirName}`);
+            await fs.writeFile(filePath, ` ${fileName} ${dirName}`);
         }
     }
-
 };
 
 void foo();
